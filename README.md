@@ -9,7 +9,7 @@ Execute `create-next-app` with npm or yarn to bootstrap the example:
 ```shell
 npx create-next-app --example https://github.com/beatzball/create-next-tailwind-example-app
 # or
-yarn create-next-app --example https://github.com/beatzball/create-next-tailwind-example-app
+yarn create next-app --example https://github.com/beatzball/create-next-tailwind-example-app
 ```
 
 #### Install it and run:
