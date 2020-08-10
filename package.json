@@ -1,0 +1,27 @@
+{
+  "name": "create-next-tailwind-example-app",
+  "version": "0.0.1",
+  "description": "example template for create-next-app with tailwind-css",
+  "main": "index.js",
+  "repository": "git@github.com:beatzball/create-next-tailwind-example-app.git",
+  "author": "beatzball <beatzball@imzaid.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "dev": "next dev -p 3010",
+    "start": "next start",
+    "build": "next build"
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^2.3.0",
+    "@types/node": "^14.0.27",
+    "@types/react": "^16.9.45",
+    "autoprefixer": "^9.8.6",
+    "next": "^9.5.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "stylelint-config-recommended": "^3.0.0",
+    "tailwindcss": "^1.6.2",
+    "typescript": "^3.9.7"
+  }
+}
