@@ -1,6 +1,6 @@
 const { colors } = require('tailwindcss/defaultTheme');
 
-export default {
+module.exports = {
   future: {
     removeDeprecatedGapUtilities: true,
     purgeLayersByDefault: true,
