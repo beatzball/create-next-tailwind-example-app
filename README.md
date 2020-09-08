@@ -1,22 +1,31 @@
 # Example Create Next App with Tailwind and Typescript
 
-This is an example/template create-next-app (CNA) to include whenever you want to start a CNA from scratch
+This is a create-next-app (CNA) example/template to use whenever you want to start a CNA from scratch with Tailwind CSS and Typescript
 
 ### How to use
-#### Uing create-next-app
+#### Using create-next-app
 Execute `create-next-app` with npm or yarn to bootstrap the example:
 
 ```shell
-npx create-next-app --example https://github.com/beatzball/create-next-tailwind-example-app
-# or
+# use yarn (preferred)
 yarn create next-app --example https://github.com/beatzball/create-next-tailwind-example-app
+# or use degit
+npx degit https://github.com/beatzball/create-next-tailwind-example-app
+# or npx
+npx create-next-app --example https://github.com/beatzball/create-next-tailwind-example-app
 ```
 
 #### Install it and run:
 ```shell
-npm install
-npm run dev
-# or
+# yarn (preferred)
 yarn
 yarn dev
+# or if you must use npm
+npm install
+npm run dev
 ```
+
+### Notes
+1. Typescript by default
+2. Uses [Tailwind CSS](https://github.com/tailwindlabs/tailwindcss)
+   - Purges unused CSS for optimized production builds
