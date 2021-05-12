@@ -1,26 +1,20 @@
-const { colors } = require('tailwindcss/defaultTheme');
+const colors = require('tailwindcss/colors');
 
 module.exports = {
-  future: {
-    removeDeprecatedGapUtilities: true,
-    purgeLayersByDefault: true,
-  },
-  purge: {
-    enabled: true,
-    content: [
-      './components/**/*.tsx',
-      './pages/**/*.tsx',
-      './components/**/*.js',
-      './pages/**/*.js',
-    ],
-  },
+  darkMode: 'media',
+  purge: [
+    './components/**/*.{js,ts,jsx,tsx}',
+    './pages/**/*.{js,ts,jsx,tsx}',
+  ],
   theme: {
     fontFamily: {},
     extend: {
       colors: {
-        primary: colors.blue,
-        secondary: colors.indigo,
+        primary: colors.teal,
+        secondary: colors.purple,
+        tertiary: colors.lightBlue,
         neutral: colors.gray,
+        violator: colors.rose
       },
       fontSize: {
         12: '12px',
