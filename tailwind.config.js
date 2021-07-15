@@ -1,20 +1,31 @@
 const colors = require('tailwindcss/colors');
 
 module.exports = {
-  darkMode: 'media',
-  purge: [
-    './components/**/*.{js,ts,jsx,tsx}',
-    './pages/**/*.{js,ts,jsx,tsx}',
-  ],
+  mode: 'jit',
+  darkMode: 'class',
+  purge: ['./components/**/*.{js,ts,jsx,tsx}', './pages/**/*.{js,ts,jsx,tsx}'],
   theme: {
     fontFamily: {},
     extend: {
       colors: {
-        primary: colors.teal,
-        secondary: colors.purple,
-        tertiary: colors.lightBlue,
-        neutral: colors.gray,
-        violator: colors.rose
+        ...colors,
+
+        /**
+         * Swap out the color sets, or create your own from
+         * Tailwinds vast color library to pick from
+         * https://tailwindcss.com/docs/customizing-colors
+         **/
+        // primary: colors.pink,
+        // secondary: colors.fuchsia,
+        // tertiary: colors.red,
+        // accent: colors.violet,
+        // violator: colors.rose,
+
+        primary: colors.blueGray,
+        secondary: colors.blue,
+        tertiary: colors.violet,
+        accent: colors.teal,
+        violator: colors.rose,
       },
       fontSize: {
         12: '12px',
@@ -33,6 +44,7 @@ module.exports = {
   },
   variants: {
     borderStyle: ['responsive', 'hover', 'focus'],
+    ringWidth: ['responsive', 'focus', 'hover'],
     transitionProperty: [
       'responsive',
       'hover',
