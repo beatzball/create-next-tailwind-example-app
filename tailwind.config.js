@@ -1,9 +1,8 @@
 const colors = require('tailwindcss/colors');
 
 module.exports = {
-  mode: 'jit',
   darkMode: 'class',
-  purge: [
+  content: [
     './src/components/**/*.{js,ts,jsx,tsx}',
     './src/pages/**/*.{js,ts,jsx,tsx}',
   ],
@@ -24,7 +23,7 @@ module.exports = {
         // accent: colors.violet,
         // violator: colors.rose,
 
-        primary: colors.blueGray,
+        primary: colors.slate,
         secondary: colors.blue,
         tertiary: colors.violet,
         accent: colors.teal,
@@ -44,17 +43,6 @@ module.exports = {
         80: '80px',
       },
     },
-  },
-  variants: {
-    borderStyle: ['responsive', 'hover', 'focus'],
-    ringWidth: ['responsive', 'focus', 'hover'],
-    transitionProperty: [
-      'responsive',
-      'hover',
-      'focus',
-      'motion-safe',
-      'motion-reduce',
-    ],
   },
   plugins: [],
 };
